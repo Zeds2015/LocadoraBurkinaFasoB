@@ -13,16 +13,21 @@ namespace LocadoraBurkinaFasoWeb.Controllers
             return View();
         }
 
+        public ActionResult Chama_Outra_Action()
+        {
+            return RedirectToAction("Criar_Cliente", "Cliente");
+        }
+
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Sobre a Locadora Burkina Faso";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contatos - Locadora Burkina Faso";
 
             return View();
         }

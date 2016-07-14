@@ -22,3 +22,65 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*para concertar o bug eu teria que achar o div, daria uma trabalheira então deixo isso para depois*/
+
+/*CSS personalizada para tabelas e listas e os headings H3*/
+
+.Lado-Direito-Titulo:hover {
+    color: rgba(0,0,0,0.4);
+    -moz-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.Lado-Esquerdo-Titulo:hover
+{
+     color: rgba(0,0,0,0.4);
+    -moz-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.Lado-Esquerdo-Titulo
+{
+    position: absolute;
+    margin-top: -315px;
+    margin-left:690px;
+}
+
+.Lado-Esquerdo-Desordem
+{
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 680px;
+}
+
+.Tabela1
+{
+    width: 350px;
+    text-align: center;
+    height: 100px;
+}
+
+.ld1:hover , .ld2:hover, .ld3:hover, .ld4:hover, .ld5:hover, .ld6:hover,  .le1:hover, .le2:hover, .le3:hover, .le4:hover 
+{
+    color: rgba(0,0,0,0.4);
+    -moz-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+/*Nem eu entendi esse le5 ele não funcionou com CSS composto então botei ele aqui em baixo*/
+
+.le5:hover {
+    color: rgba(0,0,0,0.4);
+    -moz-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+

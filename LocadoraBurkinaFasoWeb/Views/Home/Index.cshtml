@@ -3,29 +3,86 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Locadora Burkina Faso</h1>
+    <p class="lead">Uma locadora de médio porte, a Vídeo Locadora Burkina Faso, deseja um sistema de informação para melhorar o atendimento aos clientes.</p>
+
+    <h3 class="Lado-Direito-Titulo">Filmes - Categoria</h3>
+    <ul class="Lado-Direito-Desordem">
+        <li class="ld1">Drama</li>
+        <li class="ld2">Comédia</li>
+        <li class="ld3">Documentário</li>
+        <li class="ld4">Policial</li>
+        <li class="ld5">Erótico</li>
+        <li class="ld6">Terror</li>
+    </ul>
+
+    <h3 class="Lado-Esquerdo-Titulo">Filmes - Classe</h3>
+    <ul class="Lado-Esquerdo-Desordem">
+        <li class="le1">Super-Lançamento</li>
+        <li class="le2">Lançamento</li>
+        <li class="le3">Ouro</li>
+        <li class="le4">Prata</li>
+        <li class="le5">Bronze</li>
+    </ul>
+
+
+    @if (Request.IsAuthenticated)
+    {
+        @Html.ActionLink("Cadastrar Cliente" + " " + HttpUtility.HtmlDecode("&raquo;"), "Chama_Outra_Action", "Home" ,new { @class = "btn btn-primary btn-lg" })
+    }
+
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Preços Filmes</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            <table border="1" class="Tabela1">
+                <tr>
+                    <td>Super Lançamento</td>
+                    <td>Lançamento</td>
+                    <td>Ouro</td>
+                    <td>Prata</td>
+                    <td>Bronze</td>
+                </tr>
+
+                <tr>
+                    <td>R$ 7.00</td>
+                    <td>R$ 5.00</td>
+                    <td>R$ 4.00</td>
+                    <td>R$ 3.00</td>
+                    <td>R$ 2.00</td>
+                </tr>
+            </table>
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Prazo de Locação</h2>
+        <p>
+            <table border="1" class="Tabela1">
+                <tr>
+                    <td>Super-Lançamento</td>
+                    <td>Lançamento</td>
+                    <td>Ouro</td>
+                    <td>Prata</td>
+                    <td>Bronze</td>
+                </tr>
+
+                <tr>
+                    <td> 7 Dias</td>
+                    <td> 5 Dias</td>
+                    <td> 4 Dias</td>
+                    <td> 3 Dias</td>
+                    <td> 2 Dias</td>
+                </tr>
+            </table>
+
+
+
+        </p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p>Cada Cliente só podera locar no máximo 3 filmes</p>
     </div>
 </div>
